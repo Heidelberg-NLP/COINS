@@ -13,7 +13,7 @@ If you make use of the contents of this repository, please cite [the following p
 
 ```bib
 @inproceedings{paul-frank-2021-coins,
-    title = "",
+    title = "COINS: Dynamically Generating COntextualized Inference Rules for Narrative Story Completion",
     author = "Paul, Debjit  and Frank, Anette",
     booktitle = Proceedings of the Joint Conference of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (ACL-IJCNLP 2021),
     month = August,
