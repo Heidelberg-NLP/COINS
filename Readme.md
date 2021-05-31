@@ -4,7 +4,7 @@
 This directory contains the following parts of the 'COINS: Dynamically Generating COntextualized Inference Rules for Narrative Story Completion' experiment. 
 
 <p align="center">
-  <img src="" alt="COINS">
+  <img src="COINS.png" alt="COINS">
 </p>
 
 ## Reference
