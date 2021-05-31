@@ -42,8 +42,3 @@ pip install pandas
 pip install ipython
 ~~~~
 
-## Recreating Results
-<p align="center">
-  <img src="" alt="Results">
-</p>
-
