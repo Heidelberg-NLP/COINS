@@ -1,5 +1,5 @@
 ![](https://img.shields.io/github/last-commit/Heidelberg-NLP/COINS?color=blue) 
-# Work in Progress ...
+# Clean Code and Data in Progress ...
 
 This directory contains the following parts of the 'COINS: Dynamically Generating COntextualized Inference Rules for Narrative Story Completion' experiment. 
 
