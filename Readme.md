@@ -20,8 +20,9 @@ If you make use of the contents of this repository, please cite [the following p
 ## Requirements 
 ~~~~
 - python3.8+
-- pytorch
+- pip3 install torch torchvision torchaudio
 ~~~~
+
 Install the library and dependencies
 ~~~~
 git clone https://github.com/huggingface/transformers
