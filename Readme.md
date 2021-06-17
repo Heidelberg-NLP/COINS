@@ -19,8 +19,8 @@ If you make use of the contents of this repository, please cite [the following p
 ```
 ## Requirements 
 ~~~~
-- python3.8+
-- pip3 install torch torchvision torchaudio
+python3.8+
+pip3 install torch torchvision torchaudio
 ~~~~
 
 Install the library and dependencies
