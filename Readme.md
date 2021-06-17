@@ -3,10 +3,6 @@
 
 This directory contains the following parts of the 'COINS: Dynamically Generating COntextualized Inference Rules for Narrative Story Completion' experiment. 
 
-<p align="center">
-  <img src="COINS.png" alt="COINS">
-</p>
-
 ## Reference
 
 If you make use of the contents of this repository, please cite [the following paper](https://www.aclweb.org/anthology/N19-1368):
