@@ -5,6 +5,7 @@ This directory contains the following parts of the 'COINS: Dynamically Generatin
 
 
 # Data 
+Please find the NSC data splits in data folder
 
 # Ciation 
 
