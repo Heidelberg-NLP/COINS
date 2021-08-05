@@ -19,6 +19,30 @@ If you make use of the contents of this repository, please cite [the following p
     year = 2021,
     publisher = "Association for Computational Linguistics"
 }
+## Setting Up the Environment
+
+1. Create the `dassa` environment using Anaconda
+
+  ```
+  conda create -n coins python=3.6
+  ```
+
+2. Activate the environment
+
+  ```
+  source activate coins
+  ```
+
+3. Install the requirements in the environment:
+
+```
+pip install -r requirements.txt
+```
+
+Install pytorch that supports cuda8 cuda 8:
+```
+pip install torch==0.4.1
+```
 ```
 ## Requirements 
 ~~~~
