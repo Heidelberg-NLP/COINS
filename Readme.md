@@ -19,13 +19,15 @@ If you make use of the contents of this repository, please cite [the following p
     year = 2021,
     publisher = "Association for Computational Linguistics"
 }
-## Setting Up the Environment
 
+
+
+## Setting Up the Environment
 1. Create the `dassa` environment using Anaconda
 
-  ```
-  conda create -n coins python=3.6
-  ```
+```
+conda create -n coins python=3.6
+```
 
 2. Activate the environment
 
