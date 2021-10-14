@@ -4,7 +4,7 @@ This directory contains the following parts of the 'COINS: Dynamically Generatin
 
 
 ## Where can you find the data? 
-Please find the NSC data splits in ```/data``` folder
+Please find the NSC data splits in ```data/``` folder
 
 # Citation 
 
