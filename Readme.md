@@ -3,7 +3,7 @@
 This directory contains the following parts of the 'COINS: Dynamically Generating COntextualized Inference Rules for Narrative Story Completion' experiment. 
 
 
-# Data 
+## Where can you find the data? 
 Please find the NSC data splits in data folder
 
 # Citation 
