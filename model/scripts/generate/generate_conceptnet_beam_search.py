@@ -407,31 +407,7 @@ with torch.no_grad():
         sentence_hashtag1 = torch.LongTensor(text_encoder.encode(' # 1 Next Sentence # ')).to(cfg.device)
         sentence_hashtag2 = torch.LongTensor(text_encoder.encode(' # 2 Next Sentence # ')).to(cfg.device)
         mask_token = torch.LongTensor(text_encoder.encode('["MASK"]')).to(cfg.device)
-        '''
-        for i in range(2): 
-            if i == 0:
-                continue
-            XMB = input_[:, 0, i, :start_idx_k] 
-            MMB = attention_mask[:, 0, i, :start_idx_k]
-            sampling_result, XMB = beam_generate_sequence(XMB, MMB, model_know, max_end_len_k, 1)
-            output_knowledge = "<START> " + sampling_result["sequence"] + " <END> "
-            
-
-            XMB = input_[:, 1, i, :start_idx_s] 
-            MMB = attention_mask[:, 1, i, :start_idx_s]
-            sampling_result, XMB = beam_generate_sequence(XMB, MMB, model, max_end_len_s, 1)
-            output_sentence = sampling_result["sequence"]
-            
-
-        f = open("sentence_oracle_cause.txt", "a")
-        f.write(str(output_sentence)+'\n')
-        f.close()
-        f = open("knowledge_oracle_cause.txt", "a")
-        f.write(str(output_knowledge)+'\n')
-        f.close()
         
-        
-        '''
         for i in range(2):
             print("Iteration....", i)
             if i==0:
@@ -440,7 +416,7 @@ with torch.no_grad():
                 MMB_knowledge = attention_mask[:, 0, i, :start_idx_k]
                 second_context = " ".join([text_encoder.decoder[i].replace('</w>', ' ').replace(
                                     "<blank>", "___ ") for i in XMB_knowledge[:, :].squeeze().tolist() if i])
-                #print("Input1", second_context.replace('Ġ', ' '))
+                
                 # Decode Knowledge
                 sampling_result, XMB = beam_generate_sequence(XMB_knowledge, MMB_knowledge, model_know, max_end_len_k, 1)
                 output_knowledge = sampling_result["sequence"]
