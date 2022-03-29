@@ -26,7 +26,7 @@ If you make use of the contents of this repository, please cite [the following p
 | :---: | :---: | 
 | GPT-2 (small) | 16.66 |  
 | T5 (small) |  20.67 |
-| COINS (small) |  22.82 | 
+| COINS (GPT-2 small) |  22.82 | 
 
 
 ## Setting Up the Environment
