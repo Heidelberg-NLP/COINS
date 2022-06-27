@@ -91,7 +91,7 @@ class GenerationDataLoader(adata.DataLoader):
                     self.data[split]["total"])]
             
             self.masks[split]["total"] = [(len(i[0]), len(i[1]), len(i[2]), len(i[3]), len(i[4]), len(i[5]), len(i[6]), len(i[7]), len(i[8]), len(i[9]), len([10])) for i in sequences[split]]
-        #premise 
+            '''Incomplete Story(i.e, S1, S2 [SEP] S5) #Effect# S2 \t  **Ouput_Effect_S2** \t Incomplete Story(i.e, S1, S2 [SEP] S5) #Cause# S5 \t  **Ouput_Cause_S5** \t Incomplete Story(i.e, S1, S2 [SEP] S5) \t Incomplete Story(i.e, S1, S2 [SEP] S5) [SEP] Ouput_Effect_S2 [SEP] Ouput_Cause_S5 \t **Output_S3** \t Incomplete Story(i.e, S1, S2 S3 [SEP] S5) #Effect# S3 \t  **Ouput_Effect_S3** \t Incomplete Story(i.e, S1, S2 S3 [SEP] S5) #Cause# S5 \t  **Ouput_Cause_S5** \t Incomplete Story(i.e, S1, S2 S3 [SEP] S5) \t Incomplete Story(i.e, S1, S2 S3 [SEP] S5) [SEP] Ouput_Effect_S3 [SEP] Ouput_Cause_S5 \t **Output_S4** \t S2 +'\t'+ S1 +' '+ S2 +'\t'+ S5+ '\n''''
         self.max_input1 = max([max([l[0] for l in self.masks[split]["total"]])
                            for split in self.masks])
         self.max_input2 = max([max([l[2] for l in self.masks[split]["total"]])
